@@ -1,0 +1,206 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #CEB0FA; /* Matches the purple background color in the Figma */
+    color: #000000; /* White text for contrast */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #290064; /* Darker purple for header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav div {
+    display: flex;
+    align-items: center;
+}
+
+header nav div a {
+    color: #EFE6FD;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: lilita system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header nav div a:hover {
+    color: #ffd700; /* Gold hover effect */
+}
+
+header img {
+    border-radius: 50%; /* Makes the logo circular */
+}
+
+header p {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+   
+}
+
+article h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+article p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+   
+}
+
+figure {
+    margin: 20px auto;
+    text-align: center;
+}
+
+iframe {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+footer {
+    background-color:  #290064; /* Matches the header */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd700; /* Hover effect */
+}
+.logo {
+    display: flex;
+    justify-content:left;
+    font-family: lobster;
+    color: #EFE6FD;
+
+}
+/* Media query for tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+    /* Stack header elements vertically */
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make the logo smaller */
+    header .logo {
+        font-size: 20px;
+    }
+
+    /* Adjust main section layout for smaller screens */
+    main {
+        padding: 15px;
+    }
+
+    /* Make paragraphs take the full width */
+    main p {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Stack the photo title and image vertically */
+    main figure {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the size of the image */
+    main figure img {
+        max-width: 100px; /* Smaller image size */
+    }
+}
+
+/* Media query for mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    /* Make the header text smaller and stack elements */
+    header .logo {
+        font-size: 18px;
+    }
+
+    /* Stack navigation links vertically */
+    header nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Adjust main section layout */
+    main {
+        padding: 10px;
+    }
+
+    /* Adjust font size for paragraphs */
+    main p {
+        font-size: 14px;
+    }
+
+    /* Adjust image size for mobile screens */
+    main figure img {
+        max-width: 80px; /* Even smaller image size */
+    }
+}
+

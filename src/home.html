@@ -4,38 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
+        <link rel="stylesheet" href="home.css">
     </head>
     <body>
         <div>
             <div>
                 <header>
-                    <nav>
-                        <div>
-                            <a>
-                                <img src="image/logo.jpg" width="50" height="50" alt="Logo">
-                                <p><strong>Solo Design</strong></p>
-                            </a>
-                            <a>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                        <div>
-                            <div >
-                                <a href="./Aboutme.html">Aboutme</a>
-                                <a href="./Education.html">Education</a>
-                                <a href="./portfolio.html">Portfolio</a>
-                                <a href="./Contact.html">Contact</a>
-                            </div>
-                        </div>
+                    <nav id="logo">
+                        <a href="./index.html">
+                            <img src="image/logo.jpg" width="50" height="50" alt="Logo">
+                            <p><strong>Solo Design</strong></p>
+                        </a>
+                    </nav>
+                    <nav class="header-links">
+                        <ul>
+                            <li><a href="./Aboutme.html">Aboutme</a></li>
+                            <li><a href="./Education.html">Education</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./Contact.html">Contact</a></li>
+                        </ul>
+                        <a href="#" id="menu-toggle">
+                            <img src="image/menu-bar.png" alt="menu">
+                        </a>
                     </nav>
                 </header>
+                
                 <div>
-                    <main>
-                        <h1>Welcome to My World</h1>
+                    <main class="container">
+                        <h1 class="welcome-title">Welcome to My World</h1>
                         <div>
-
                             <p>
                                 Hello! I'm Solome Bereket, a passionate and
                                 creative software engineer with a drive for
@@ -45,70 +42,65 @@
                                 This space serves as a showcase of my journey in
                                 software development, highlighting the projects
                                 and experiences that have shaped my career.
-
                             </p>
                             <p>
                                 Beyond the digital realm, I'm driven by the idea
-                                of making people life better specialy those that
+                                of making people life better, especially those who
                                 are disadvantaged like farmers, people with
-                                disabilities and those that are in lower
-                                economic environment. I believe in the power of
+                                disabilities, and those that are in lower
+                                economic environments. I believe in the power of
                                 collaboration, continuous learning, and making a
                                 positive impact in the world through my work.
                             </p>
-
                             <p>
                                 Thank you for taking the time to visit—I hope
                                 you enjoy discovering my work!
                             </p>
-
                         </div>
-                        <div>
-                
+                        <div class="profile">
                             <h2>My Photo</h2>
                             <figure>
-                                <img src="image/picmine.jpg" alt="My Photo"
-                                    style="max-width: 128px; max-height: 128px;">
-                                <figcaption >Picture of me</figcaption>
+                                <img src="image/picmine.jpg" alt="My Photo" style="max-width: 128px; max-height: 128px;">
+                                <figcaption>Picture of me</figcaption>
                             </figure>
                         </div>
-                            <div>
-                                <a href="www.instagram.com"><img src="image/instagram.jpg"
-                                        alt="Instagram_icon" width="50" height="50"></a>
-                                <a
-                                    href="https://www.youtube.com/@goodengineer2015"><img
-                                        src="image/youtube.png" width="50" height="50"
-                                        alt="Youtube_icon"></a>
-                                <a
-                                    href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img
-                                        src="image/linkedin.png" width="50" height="50"
-                                        alt="linkedin_icon"></a>
-                                <a href="https://telegram.org/"><img
-                                        src="image/telegram.jpg" width="50" height="50"
-                                        alt="telegram_icon"></a>
-                            </div>
+                        <div>
+                            <a href="www.instagram.com"><img src="image/instagram.jpg"
+                                    alt="Instagram_icon" width="50" height="50"></a>
+                            <a
+                                href="https://www.youtube.com/@goodengineer2015"><img
+                                    src="image/youtube.png" width="50" height="50"
+                                    alt="Youtube_icon"></a>
+                            <a
+                                href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img
+                                    src="image/linkedin.png" width="50" height="50"
+                                    alt="linkedin_icon"></a>
+                            <a href="https://telegram.org/"><img
+                                    src="image/telegram.jpg" width="50" height="50"
+                                    alt="telegram_icon"></a>
+                        </div>
 
                     </main>
-                </div>
-                <!-- Footer Section -->
-                <footer>
-                    <div>
+                    
+                    <!-- Footer Section -->
+                    <footer>
                         <div>
                             <p>copyright &#169;2023 All Rights Reserved</p>
                         </div>
                         <div>
-                            <a href="https://www.youtube.com/@goodengineer2015"><img src="./images/youtube1.png"
-                                    alt="Youtube_icon"></a>
-                            <a
-                                href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img src="./images/linkdin1.png"
-                                    alt="linkedin_icon"></a>
-                            <a href="https://telegram.org/"><img
-                                    src="./images/telegram.png"
-                                    alt="telegram_icon"></a>
+                            <a href="https://www.youtube.com/@goodengineer2015"><img
+                                src="./image/youtube.png" alt="Youtube_icon" width="50" height="50"></a>
+                        <a
+                            href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img
+                                src="./image/linkedin.png" alt="linkedin_icon" width="50" height="50"></a>
+                        <a href="www.instagram.com"><img src="image/instagram.jpg"
+                                    alt="Instagram_icon" width="50" height="50"></a>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
+                    
+                </div>
             </div>
         </div>
+        <script src="./script.js"></script>c
     </body>
 </html>

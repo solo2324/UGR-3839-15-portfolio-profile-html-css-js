@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9654F4; /* Background color matches the purple tone */
+    color: #111111; /* White text for readability */
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    display: flex;
+    justify-content:left;
+    font-family: lobster;
+    color: #EFE6FD;
+
+}
+
+header {
+    background-color:  #290064;
+    padding: 20px 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFC107; /* Golden hover color for links */
+}
+
+nav div img {
+    border-radius: 50%;
+}
+
+header a p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main h1 {
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+
+main p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+audio {
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+#audio {
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #6A1B9A;
+    border-radius: 8px;
+    width: 80%;
+}
+
+footer {
+    padding: 15px;
+    background-color:  #290064;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
+
+div p {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1rem;
+    max-width: 800px;
+}
+/* Media query for tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+    /* Stack header elements vertically */
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make the logo smaller */
+    header .logo {
+        font-size: 20px;
+    }
+
+    /* Adjust main section layout for smaller screens */
+    main {
+        padding: 15px;
+    }
+
+    /* Make paragraphs take the full width */
+    main p {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Stack the photo title and image vertically */
+    main figure {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the size of the image */
+    main figure img {
+        max-width: 100px; /* Smaller image size */
+    }
+}
+
+/* Media query for mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    /* Make the header text smaller and stack elements */
+    header .logo {
+        font-size: 18px;
+    }
+
+    /* Stack navigation links vertically */
+    header nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Adjust main section layout */
+    main {
+        padding: 10px;
+    }
+
+    /* Adjust font size for paragraphs */
+    main p {
+        font-size: 14px;
+    }
+
+    /* Adjust image size for mobile screens */
+    main figure img {
+        max-width: 80px; /* Even smaller image size */
+    }
+}
+.white{
+    color: #EFE6FD;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+ }
+

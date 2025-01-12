@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9d7e9;
+}
+header {
+    background-color:  #290064; /* Darker purple for header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav div {
+    display: flex;
+    align-items: center;
+}
+
+header nav div a {
+    color: #EFE6FD;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: lilita system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header nav div a:hover {
+    color: #ffd700; /* Gold hover effect */
+}
+
+header img {
+    border-radius: 50%; /* Makes the logo circular */
+}
+
+.logo {
+    display: flex;
+    justify-content:left;
+    font-family: lobster;
+    color: #EFE6FD;
+}
+
+header p {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4e4f8;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #5e2773;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #471b5d;
+}
+
+form {
+    background-color: #93329e;
+    padding: 70px;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input, .textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #d0b3e1;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #5c2d91;
+}
+
+.textarea {
+    height: 100px;
+}
+
+.button {
+    padding: 12px 25px;
+    background-color: #621b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4d144f;
+}
+
+footer {
+    padding: 20px;
+    background-color:  #290064;
+    color: white;
+    text-align: center;
+}
+
+footer div p {
+    margin: 5px 0;
+}
+
+footer div a img {
+    width: 28px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer div a img:hover {
+    transform: scale(1.15);
+}
+.logo {
+    display: flex;
+    justify-content:left;
+    font-family: lobster;
+    color: #EFE6FD;
+
+}
+/* Media query for tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+    /* Stack header elements vertically */
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make the logo smaller */
+    header .logo {
+        font-size: 20px;
+    }
+
+    /* Adjust main section layout for smaller screens */
+    main {
+        padding: 15px;
+    }
+
+    /* Make paragraphs take the full width */
+    main p {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Stack the photo title and image vertically */
+    main figure {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the size of the image */
+    main figure img {
+        max-width: 100px; /* Smaller image size */
+    }
+}
+
+/* Media query for mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    /* Make the header text smaller and stack elements */
+    header .logo {
+        font-size: 18px;
+    }
+
+    /* Stack navigation links vertically */
+    header nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Adjust main section layout */
+    main {
+        padding: 10px;
+    }
+
+    /* Adjust font size for paragraphs */
+    main p {
+        font-size: 14px;
+    }
+
+    /* Adjust image size for mobile screens */
+    main figure img {
+        max-width: 80px; /* Even smaller image size */
+    }
+}
+
+
+
